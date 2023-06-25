@@ -1,14 +1,43 @@
+@font-face {
+  font-family: 'MBORijnland';
+  src: url('fonts/segoeui.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #FFE815;
 }
 
-.video {
+.container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  position: relative;
 }
 
-.video iframe {
-  margin: auto;
+.info {
+  float: left;
+  height: 100vh;
+  width: 33.33vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.info-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 33.33vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.video {
+  flex-grow: 1;
+  height: 100vh;
+  width: 33.33vw;
+  float: left;
+}
+
